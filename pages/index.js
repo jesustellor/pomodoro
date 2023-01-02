@@ -99,24 +99,24 @@ export default function Countdown() {
         <section>
           <p>Session Length</p>
           <div className={styles.session}>
-            <button id="sessionId" onClick={increase}>
-              <i class="bi bi-plus-circle"></i>
-            </button>
-            <p>{minutes.second}</p>
             <button id="sessionId" onClick={decrease}>
               <i class="bi bi-dash-circle"></i>
+            </button>
+            <p>{minutes.second}</p>
+            <button id="sessionId" onClick={increase}>
+              <i class="bi bi-plus-circle"></i>
             </button>
           </div>
         </section>
         <section>
           <p>Break in Minutes</p>
           <div className={styles.session}>
-            <button id="breakId" onClick={increase}>
-              <i class="bi bi-plus-circle"></i>
-            </button>
-            <p>{breakMin.second}</p>
             <button id="breakId" onClick={decrease}>
               <i class="bi bi-dash-circle"></i>
+            </button>
+            <p>{breakMin.second}</p>
+            <button id="breakId" onClick={increase}>
+              <i class="bi bi-plus-circle"></i>
             </button>
           </div>
         </section>
